@@ -1,0 +1,219 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "1. Write a Python program to print &quot;Hello Python&quot;?\n",
+    "2. Write a Python program to do arithmetical operations addition and division.?\n",
+    "3. Write a Python program to find the area of a triangle?\n",
+    "4. Write a Python program to swap two variables?\n",
+    "5. Write a Python program to generate a random number?"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "1. Write a Python program to print &quot;Hello Python&quot;?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello python\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hello python\")"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "2. Write a Python program to do arithmetical operations addition and division.?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number: 25\n",
+      "enter the number: 35\n",
+      "the sum of a+b is: 60\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Program for addition\n",
+    "a=int(input(\"enter the number: \"))\n",
+    "b=int(input(\"enter the number: \"))\n",
+    "c=a+b\n",
+    "print( \"the sum of a+b is: \"+str(c))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number100\n",
+      "enter the number2\n",
+      "the sum of a/b is:  50.0\n",
+      "50\n"
+     ]
+    }
+   ],
+   "source": [
+    "#program for division \n",
+    "a=int(input(\"enter the number\"))\n",
+    "b=int(input(\"enter the number\"))\n",
+    "c=a/b\n",
+    "print(\"the sum of a/b is:  \"+str(c))\n",
+    "#for floor division\n",
+    "d=a//b\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "3. Write a Python program to find the area of a triangle?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number5\n",
+      "enter the number6\n",
+      "enter the number7\n",
+      "the area of triangle14.696938456699069\n"
+     ]
+    }
+   ],
+   "source": [
+    "#program for area of triangle\n",
+    "a=int(input(\"enter the number\"))\n",
+    "b=int(input(\"enter the number\"))\n",
+    "c=int(input(\"enter the number\"))\n",
+    "s=(a+b+c)/2\n",
+    "#area of triangle\n",
+    "A=(s*(s-a)*(s-b)*(s-c))**0.5\n",
+    "print(\"the area of triangle\"+str(A))"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "4. Write a Python program to swap two variables?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number60\n",
+      "enter the number10\n",
+      "before swapping a=60\n",
+      "before swapping b=10\n",
+      "after swapping a=10\n",
+      "after swapping b=60\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=int(input(\"enter the number\"))\n",
+    "b=int(input(\"enter the number\"))\n",
+    "print('before swapping a='+str(a))\n",
+    "print('before swapping b='+str(b))\n",
+    "t=0\n",
+    "t=a\n",
+    "a=b\n",
+    "b=t\n",
+    "#another logic: a,b=b,a\n",
+    "print('after swapping a='+str(a))\n",
+    "print('after swapping b='+str(b))"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "5. Write a Python program to generate a random number?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number25\n",
+      "enter the number90\n",
+      "44\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "a=int(input(\"enter the number\"))\n",
+    "b=int(input(\"enter the number\"))\n",
+    "print(random.randrange(a,b))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
